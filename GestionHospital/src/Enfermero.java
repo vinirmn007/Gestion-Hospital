@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Date;
 
 public class Enfermero extends Persona{
@@ -10,5 +11,13 @@ public class Enfermero extends Persona{
     public Enfermero(String nombre, String apellido, String dni, Date fechaNacimiento, String ID_ENFERMERO){
         super(nombre, apellido, dni, fechaNacimiento);
         this.ID_ENFERMERO = ID_ENFERMERO;
+    }
+
+    @Override
+    public String toString() {
+        return "Enfermero{" +
+                "Nombre: " + super.getNombre() + '\n' +
+                "ID_ENFERMERO='" + ID_ENFERMERO +
+                '}';
     }
 }

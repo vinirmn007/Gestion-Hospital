@@ -8,6 +8,21 @@ public class CitaMedica implements GestionCita{
     private Estado estado;
     private static int contadorCitas = 0;
 
+    private Doctor doctorList[];
+    private Paciente pacienteList[];
+    private Enfermero enfermeroList[];
+
+    public CitaMedica(Date fecha, Time hora, String motivoCita, Estado estado, Doctor doctorList[], Paciente pacienteList[], Enfermero enfermeroList[]){
+        this.fecha = fecha;
+        this.hora = hora;
+        this.motivoCita = motivoCita;
+        this.estado = estado;
+        this.doctorList = doctorList;
+        this.pacienteList = pacienteList;
+        this.enfermeroList = enfermeroList;
+        contadorCitas++;
+    }
+
     @Override
     public void programarCita(){
         //TODO
@@ -18,4 +33,14 @@ public class CitaMedica implements GestionCita{
     public void realizarCita() {
         //TODO
     };
+
+    @Override
+    public String toString() {
+        return "CitaMedica{ \n" +
+                "fecha=" + fecha + '\n' +
+                ", hora=" + hora + '\n' +
+                ", motivoCita='" + motivoCita + '\n' +
+                ", estado=" + estado + '\n' +
+                '}';
+    }
 }

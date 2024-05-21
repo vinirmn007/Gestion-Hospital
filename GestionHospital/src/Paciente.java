@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Date;
 
 public class Paciente extends Persona{
@@ -6,8 +7,15 @@ public class Paciente extends Persona{
     private Doctor doctorList[];
     private Enfermero enfermeroList[];
 
-    public Paciente(String nombre, String apellido, String dni, Date fechaNacimiento, ExpedienteMedico expedient    ) {
+    public Paciente(String nombre, String apellido, String dni, Date fechaNacimiento) {
         super(nombre, apellido, dni, fechaNacimiento);
-        this.expediente = expediente;
+    }
+
+    @Override
+    public String toString() {
+        return "Paciente{" +
+                "Nombre: " + super.getNombre() + '\n' +
+                "expediente=" + expediente +
+                '}';
     }
 }

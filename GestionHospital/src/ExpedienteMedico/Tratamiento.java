@@ -5,4 +5,9 @@ public class Tratamiento {
     private int duracionEstimada;
 
     private Enfermedad enfermedad;
+
+    public Tratamiento(String nombre, int duracionEstimada) {
+        this.nombre = nombre;
+        this.duracionEstimada = duracionEstimada;
+    }
 }

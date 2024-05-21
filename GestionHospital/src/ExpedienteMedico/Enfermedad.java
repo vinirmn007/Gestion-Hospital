@@ -5,4 +5,9 @@ public class Enfermedad {
     private boolean enTratamiento;
 
     private Tratamiento tratamientoList[];
+
+    public Enfermedad(String nombre, boolean enTratamiento) {
+        this.nombre = nombre;
+        this.enTratamiento = enTratamiento;
+    }
 }
