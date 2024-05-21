@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public interface GestionCita {
+public interface GestionCita {
+    public void programarCita();
+    public void cancelarCita();
+    public void realizarCita();
 }

@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public enum Estado {
+public enum Estado {
+    PROGRAMADA, REALIZADA, CANCELADA;
 }
