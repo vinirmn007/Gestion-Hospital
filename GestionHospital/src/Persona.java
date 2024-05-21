@@ -17,4 +17,8 @@ public abstract class Persona {
         this.dni = dni;
         this.fechaNacimiento = fechaNacimiento;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
 }

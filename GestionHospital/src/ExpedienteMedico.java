@@ -9,4 +9,10 @@ public class ExpedienteMedico {
     private Enfermedad enfermedadList[];
 
     private Paciente paciente;
+
+    public ExpedienteMedico(String alergias, TipoSangre tipoSangre, Paciente paciente) {
+        this.alergias = alergias;
+        this.tipoSangre = tipoSangre;
+        this.paciente = paciente;
+    }
 }
